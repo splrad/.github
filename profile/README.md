@@ -15,31 +15,21 @@ SPLRAD 是一个由个人独立维护的开发组织。这里收纳正在使用�
 
 ## 正在构建
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
 ### [LayerScape · 叠境](https://github.com/splrad/LayerScape)
 
 面向 CAD 的模块化效率工具集。它从缺失字体检测与自动替换开始，以后还会加入更多面向日常 CAD 工作的功能。
 
-[下载](https://github.com/splrad/LayerScape/releases) · [使用说明](https://github.com/splrad/LayerScape#readme) · [反馈与建议](https://github.com/splrad/LayerScape/discussions/new?category=ideas)
-
-</td>
-<td width="50%" valign="top">
-
-### [Steward](https://github.com/splrad/steward)
-
-Steward 负责 SPLRAD 各仓库共用的自动化。它处理拉取请求、验证、仓库接入和发布流程，让每个项目把更多精力留给产品本身。
-
-[了解 Steward](https://github.com/splrad/steward#readme)
-
-</td>
-</tr>
-</table>
+[下载](https://github.com/splrad/LayerScape/releases) · [使用说明](https://github.com/splrad/LayerScape#readme) · [报告问题](https://github.com/splrad/LayerScape/issues/new?template=bug-report.yml) · [提出功能建议](https://github.com/splrad/LayerScape/discussions/new?category=ideas)
 
 ## 不止于此
 
 SPLRAD 不以行业或技术栈划定边界。未来的项目可能来自软件开发和工程实践，也可能从某个全新的兴趣开始，或只是一个反复遇到、值得认真解决的小问题。
 
 项目各自独立发布，并在对应仓库提供源码、使用说明和反馈入口。想看看接下来会出现什么，可以从[全部仓库](https://github.com/orgs/splrad/repositories)开始。
+
+<details>
+<summary><strong>组织内部的自动化</strong></summary>
+
+[Steward](https://github.com/splrad/steward) 是 SPLRAD 自用的仓库自动化工具，只服务于本组织的项目维护，不作为对外产品或通用服务。
+
+</details>
