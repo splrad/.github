@@ -1,9 +1,9 @@
-# Security policy
+# 安全政策
 
-Report suspected vulnerabilities privately. Use the repository's private vulnerability reporting option from the Security tab. If that option is not available, contact [alearner@splrad.com](mailto:alearner@splrad.com).
+发现疑似安全漏洞时，请通过仓库 Security 标签页中的私密漏洞报告入口提交。若该入口不可用，请联系 [alearner@splrad.com](mailto:alearner@splrad.com)。
 
-Do not disclose a vulnerability publicly before the maintainers have had a reasonable opportunity to assess it. Reports should include the affected repository, a clear description, steps to reproduce when safe to provide, and the potential impact.
+请先让维护者有合理时间评估问题，再公开漏洞信息。报告应说明受影响的仓库、问题描述、可安全提供的复现步骤和可能影响。
 
-Do not include credentials, private keys, access tokens, customer data, or private repository paths in issues, pull requests, screenshots, or proof-of-concept material. Remove or redact sensitive data before sharing supporting files.
+不要在 Issue、Pull Request、截图或 PoC 材料中包含凭据、私钥、访问令牌、客户数据或私有仓库路径。提交辅助材料前，请删除或遮盖敏感信息。
 
-This policy is the organization default. A repository may provide a more specific policy where its architecture or deployment model requires different reporting guidance.
+本文件是组织的默认安全政策。某些仓库可能因架构或部署方式不同而提供更具体的报告说明。
