@@ -8,7 +8,10 @@
 .github/
 ├── copilot-instructions.md    Copilot 代码审查的中文输出与结论格式
 └── pull_request_template.md   组织默认拉取请求模板
+CODE_OF_CONDUCT.md              组织公共行为准则
+CONTRIBUTING.md                 本仓库的贡献说明
 LICENSE                        Apache License 2.0
+SECURITY.md                     组织默认安全报告方式
 ```
 
 ### 拉取请求模板
@@ -16,6 +19,12 @@ LICENSE                        Apache License 2.0
 `.github/pull_request_template.md` 提供组织默认模板。模板为 Steward 生成的标题与正文预留了受管区域，同时保留“人工补充”位置，用来填写自动摘要没有覆盖但审查者必须知道的信息。
 
 项目确有不同需求时，可以在项目仓库内提供自己的模板；否则应沿用这里的通用版本，避免重复维护。
+
+### 社区文件和安全报告
+
+`CODE_OF_CONDUCT.md` 和 `SECURITY.md` 是组织的默认社区文件。公开仓库没有同名项目文件时，GitHub 会使用本仓库的版本；`steward` 保留自己的安全报告说明，因为它的中央凭据和运行环境需要更严格的边界。
+
+各项目的贡献流程并不相同，因此 `steward` 和 `LayerScape` 各自维护 `CONTRIBUTING.md`。本仓库的贡献说明只适用于组织公共配置。
 
 ### Copilot 代码审查说明
 
