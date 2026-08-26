@@ -5,13 +5,14 @@
 ## 提供的内容
 
 ```text
-.github/
-├── copilot-instructions.md    Copilot 代码审查的中文输出与结论格式
-└── pull_request_template.md   组织默认拉取请求模板
-CODE_OF_CONDUCT.md              组织公共行为准则
-CONTRIBUTING.md                 本仓库的贡献说明
-LICENSE                        Apache License 2.0
-SECURITY.md                     组织默认安全报告方式
+.
+├── .github/
+│   ├── copilot-instructions.md     Copilot 代码审查的中文输出与结论格式
+│   └── pull_request_template.md    组织默认拉取请求模板
+├── CODE_OF_CONDUCT.md              组织公共行为准则
+├── CONTRIBUTING.md                 本仓库的贡献说明
+├── LICENSE                         Apache License 2.0
+└── SECURITY.md                     组织默认安全报告方式
 ```
 
 ### 拉取请求模板
