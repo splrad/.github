@@ -17,7 +17,7 @@
 
 ### 拉取请求模板
 
-`.github/pull_request_template.md` 提供组织默认模板。模板为 Steward 生成的标题与正文预留了受管区域，同时保留“人工补充”位置，用来填写自动摘要没有覆盖但审查者必须知道的信息。
+`.github/pull_request_template.md` 是创建 PR 页面使用的组织默认模板，说明自动创建、故障补建和 fork 贡献的流程。Steward 后续更新会重新生成标题和正文；需要保留的补充信息请写在 PR 评论中。
 
 项目确有不同需求时，可以在项目仓库内提供自己的模板；否则应沿用这里的通用版本，避免重复维护。
 
@@ -29,9 +29,9 @@
 
 ### Copilot 代码审查说明
 
-`.github/copilot-instructions.md` 规定审查主体使用简体中文，并统一阻断问题、建议问题和最终结论的格式。该文件由 Steward 的公共配置生成并同步，不是独立的规则源。
+`AGENTS.md` 保存共享规则，`.github/copilot-instructions.md` 保存 Copilot 平台补充说明。两个文件均由 Steward 的中央规则生成和同步。
 
-需要调整通用审查规则时，应修改 `splrad/steward` 中的 [`config/copilot/common.md`](https://github.com/splrad/steward/blob/main/config/copilot/common.md)，通过 Steward 校验后再同步到受管仓库。直接改动生成文件，后续同步时会被中央配置纠正。
+需要调整通用规则时，应修改 `splrad/steward` 中的 [`config/review/rules.json`](https://github.com/splrad/steward/blob/main/config/review/rules.json)。中央规则合并并成功部署后，由同步工作流更新受管仓库中的生成文件。规则尚未生效时，生成文件保持与当前中央策略一致。
 
 ## 与 Steward 的分工
 
