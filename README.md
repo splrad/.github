@@ -7,8 +7,8 @@
 ```text
 .
 ├── .github/
-│   ├── copilot-instructions.md     Copilot 代码审查的中文输出与结论格式
 │   └── pull_request_template.md    组织默认拉取请求模板
+├── AGENTS.md                       中央生成的共享规则与本仓库规则
 ├── CODE_OF_CONDUCT.md              组织公共行为准则
 ├── CONTRIBUTING.md                 本仓库的贡献说明
 ├── LICENSE                         Apache License 2.0
@@ -17,7 +17,7 @@
 
 ### 拉取请求模板
 
-`.github/pull_request_template.md` 是创建 PR 页面使用的组织默认模板，说明自动创建、故障补建和 fork 贡献的流程。Steward 后续更新会重新生成标题和正文；需要保留的补充信息请写在 PR 评论中。
+`.github/pull_request_template.md` 是创建 PR 页面使用的组织默认模板，说明同仓自动创建、故障补建、fork 自建和原生 Ready 操作。Steward 后续可能重建其管理的 PR 标题和完整正文；需要保留的补充信息请写在 PR 评论中。
 
 项目确有不同需求时，可以在项目仓库内提供自己的模板；否则应沿用这里的通用版本，避免重复维护。
 
@@ -29,9 +29,9 @@
 
 ### Copilot 代码审查说明
 
-`AGENTS.md` 保存共享规则，`.github/copilot-instructions.md` 保存 Copilot 平台补充说明。两个文件均由 Steward 的中央规则生成和同步。
+组织 Copilot 指令采用中央公共规则；本仓库的 `AGENTS.md` 由同一来源生成，保留共享规则和本仓库专用规则。
 
-需要调整通用规则时，应修改 `splrad/steward` 中的 [`config/review/rules.json`](https://github.com/splrad/steward/blob/main/config/review/rules.json)。中央规则合并并成功部署后，由同步工作流更新受管仓库中的生成文件。规则尚未生效时，生成文件保持与当前中央策略一致。
+需要调整通用规则时，应修改 `splrad/steward` 中的 [`config/review/rules.json`](https://github.com/splrad/steward/blob/main/config/review/rules.json)，并按[发布与同步说明](https://github.com/splrad/steward/blob/main/config/review/README.md)先更新并验证组织指令，再更新采用摘要。中央规则合并部署后，由同步工作流更新各仓生成文件。规则尚未生效时，生成文件保持与当前中央策略一致。
 
 ## 与 Steward 的分工
 
