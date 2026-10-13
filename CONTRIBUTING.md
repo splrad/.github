@@ -4,7 +4,7 @@
 
 提交改动前，先确认它确实适用于多个 SPLRAD 公开仓库。某个产品独有的规则、构建命令或用户文档，应放在对应产品仓库。
 
-`.github/copilot-instructions.md` 由 Steward 生成和同步。需要修改其中的通用审查规则时，请先修改 [`splrad/steward`](https://github.com/splrad/steward) 中的来源配置，不要直接改生成文件。`.github/pull_request_template.md` 中的受管注释也必须保留。
+公共审查规则由 [`splrad/steward` 的中央配置](https://github.com/splrad/steward/tree/main/config/review)维护，供组织 Copilot 指令和各仓 `AGENTS.md` 使用。请在中央规则中修改，并按该目录的发布与同步说明更新生成内容。`.github/pull_request_template.md` 中的受管注释必须保留。
 
 提交前请检查：
 
@@ -14,3 +14,9 @@
 - Pull Request 说明了改动为何应成为组织默认配置。
 
 组织成员和外部贡献者都应通过 Pull Request 提交改动。提交后请等待维护者审查和适用的自动检查，不要直接修改 `main`。
+
+有本仓库写权限时，向本仓库非默认工作分支推送后等待 Steward 自动创建或更新 PR，首次创建为草稿。没有对应 PR 时先检查自动化；仍在运行则等待，状态不明则先核查，确认机器人故障、无法自动创建且仍无对应 PR 后才手动补建。通过 fork 贡献时，从自己的 fork 向本仓库创建 PR，无需等待机器人代开。
+
+草稿准备好后，在 PR 页面点击 **Ready for review**。PR 作者或拥有目标仓库 Write 及以上权限的用户均可操作，适用于同仓和 fork PR。机器人创建的 PR 可由具备上述仓库权限的用户操作；fork PR 作者无需上游 Write 权限。Ready 仅表示提交审查，检查、批准和人工合并仍须分别完成。
+
+手动创建时填写标题和变更说明，保留模板受管标记。Steward 后续可能重建其管理的 PR 标题和完整正文；需要保留的补充说明和验证证据请写入 PR 评论。
