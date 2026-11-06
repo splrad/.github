@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directory: /
+  exclude-paths:
+  - .github/workflows/pr-title.yml
+  - .github/workflows/pr-labeler.yml
+  schedule:
+    interval: weekly
+    day: monday
+    time: "09:00"
+    timezone: Asia/Bangkok
+  open-pull-requests-limit: 5
