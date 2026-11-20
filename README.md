@@ -8,7 +8,7 @@
 .
 ├── .github/
 │   └── pull_request_template.md    组织默认拉取请求模板
-├── AGENTS.md                       中央生成的共享规则与本仓库规则
+├── AGENTS.md                       通过 Copier 采用的公共代码审查规则
 ├── CODE_OF_CONDUCT.md              组织公共行为准则
 ├── CONTRIBUTING.md                 本仓库的贡献说明
 ├── LICENSE                         Apache License 2.0
@@ -29,9 +29,9 @@
 
 ### Copilot 代码审查说明
 
-组织 Copilot 指令采用中央公共规则；本仓库的 `AGENTS.md` 由同一来源生成，保留共享规则和本仓库专用规则。
+各仓的 `AGENTS.md` 通过 Copier 采用已审的公共模板版本。调整公共代码审查规则时，请修改 Steward 的 [AGENTS.md 模板](https://github.com/splrad/steward/blob/main/templates/repository/AGENTS.md)。仓库专有的贡献约定见本仓 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-需要调整通用规则时，应修改 `splrad/steward` 中的 [`config/review/rules.json`](https://github.com/splrad/steward/blob/main/config/review/rules.json)，并按[发布与同步说明](https://github.com/splrad/steward/blob/main/config/review/README.md)先更新并验证组织指令，再更新采用摘要。中央规则合并部署后，由同步工作流更新各仓生成文件。规则尚未生效时，生成文件保持与当前中央策略一致。
+组织 Copilot 指令和 Codex 的审查语言设置采用[中央组织稿](https://github.com/splrad/steward/blob/main/config/review/copilot-organization.md)。入口设置及模板采用步骤见[维护说明](https://github.com/splrad/steward/blob/main/config/review/README.md)。
 
 ## 与 Steward 的分工
 
