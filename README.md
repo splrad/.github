@@ -33,14 +33,6 @@
 
 组织 Copilot 指令和 Codex 的审查语言设置采用[中央组织稿](https://github.com/splrad/steward/blob/main/config/review/copilot-organization.md)。入口设置及模板采用步骤见[维护说明](https://github.com/splrad/steward/blob/main/config/review/README.md)。
 
-## 与 Steward 的分工
-
-- 本仓库只保存组织公共文件，不保存 GitHub App 私钥、令牌或项目发布配置。
-- Steward 负责仓库接入、拉取请求处理、配置校验和 Copilot 说明同步。
-- 各产品仓库保留自己的代码、文档和确有必要的项目专用配置。
-
-这种分工让公共模板保持简短，也避免把中央自动化复制到每个仓库。
-
 ## 修改前检查
 
 1. 确认改动属于组织通用规则，不是某个产品的专用要求。
